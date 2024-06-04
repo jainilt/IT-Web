@@ -386,6 +386,7 @@ p.service-heading-p {
     /* background-color: #1A237E; */
     display: flex;
     align-items: center;
+    padding: 40px 20px;
   }
   .nav > .nav-header {
     flex: 0.95;
