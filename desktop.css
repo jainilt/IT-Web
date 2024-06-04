@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-X: hidden;
+    font-family: 'FuturaBT-Medium';
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 45px;
+    font-size: 17px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items {
+    margin: auto;
+    width: 42%;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.right-side-section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right-side-section a {
+    text-decoration: underline;
+    color: #000;
+}
+
+.hover-line {
+    height: 2px;
+    width: auto;
+    background-color: #000;
+}
+
+.items-item::before {
+    height: 2px;
+    width: 0;
+    /* Start with a width of 0 */
+    background-color: #1f1f1f;
+    display: block;
+    content: "";
+    position: absolute;
+    /* Make the position fixed */
+    bottom: -5px;
+    left: 0;
+    transition: opacity 0.3s, width 0.3s, left 0.3s;
+    opacity: 0;
+}
+
+.items-item:hover::before {
+    opacity: 1;
+    width: 100%;
+    /* Expand to full width on hover */
+    left: 0;
+    /* Ensure the left position remains the same */
+    transition: opacity 0.3s ease, width 0.3s ease, left 0.3s ease;
+}
+
+.items-item {
+    position: relative;
+}
+
+.big-heaading {
+    color: #1f1f1f;
+    font-size: 3.5rem;
+    margin: 0 13rem;
+}
+
+.logos-under-heading {
+    display: flex;
+    gap: 2rem;
+    /* position: relative; */
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+}
+
+.leaf {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 567px;
+    top: 28rem;
+    left: 73.5%;
+    right: 0;
+    background-image: url(robot.png);
+    opacity: 1;
+    -webkit-animation: none;
+    animation: none;
+    z-index: 9;
+    background-repeat: no-repeat;
+}
+
+.leaf-section {
+    position: relative;
+    background-color: #1f1f1f;
+    margin-top: 1rem;
+    color: white;
+    margin-bottom: 10rem;
+    /* margin: 0 auto; */
+}
+
+.content {
+    color: white;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 15px;
+    line-height: 5rem;
+}
+
+.content>h2 {
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+.services {
+    display: flex;
+    margin: 0 13rem;
+}
+
+.services h3 {
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.services-flex {
+    display: flex;
+    line-height: 2.5rem;
+    margin-top: 8rem;
+}
+
+.pr {
+    padding: 0 30px 0 0;
+}
+
+h3.service-heading {
+    font-weight: 200;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+p.service-heading-p {
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+    color: grey;
+}
+
+.webdev:hover .hide,
+.webdesign:hover .hide,
+.ecom:hover .hide {
+    opacity: 1;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 0;
+}
+
+.hide {
+    position: relative;
+    opacity: 0;
+    transition: 0.3s;
+    bottom: -2rem;
+    cursor: pointer;
+}
+
+.gradient-text p {
+    font-weight: 800;
+    background: linear-gradient(to right, #22e457 0, #1bd6d8 13%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.prde {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 70rem;
+    margin-bottom: 10rem;
+}
+
+.left span {
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    color: gray;
+
+}
+
+.center-div {
+    width: 20%;
+}
+
+.left h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3rem;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 40%;
+}
+
+.rp1,
+.rp2,
+.rp3 {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: gray;
+
+}
+
+.rp1,
+.rp2 {
+    margin-bottom: 2rem;
+}
+
+.rp3 {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.twplus-img {
+    position: absolute;
+    left: -4.1rem;
+    z-index: -1;
+}
+
+.rp3::before {
+    height: 0.1rem;
+    background-color: black;
+    width: 16%;
+    content: '';
+    position: absolute;
+    bottom: -0.3rem;
+    width: 50%;
+    transition: .3s;
+}
+
+.rp3:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .leaf {
+        display: none;
+    }
+}
+
+.box1{
+    /* height: auto; */
+    width: 600px;
+    height: 450px;
+    background-color: rgb(39, 39, 39);
+    position: relative;
+    left: 20rem;
+    top: 20rem;
+    cursor: pointer;
+}
+.horizontal{
+    background-color: #000000;
+    margin-bottom: 5rem;
+}
+.boxes-h{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #000000; */
+    gap: 10rem;
+    width: 300vw;
+    height: 150vh;
+}
+.box1 img{
+    width: 37.5rem;
+    height: 28.125rem;
+}
+.box1 img:hover{
+    opacity: 0.4;
+}
+.img-text-small {
+    position: absolute;
+    color: white;
+    z-index: 99999;
+    left: 12%;
+    bottom: 20%;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.boxes-h3{
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+}
+.box1 .jt{
+    opacity: 0;
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    top: 70%;
+    left: 12%;
+    transition: 0.2s;
+    letter-spacing: 3px;
+}
+.box1:hover .jt{
+    opacity: 1;
+    top: 67%;
+}
+.happy-text{
+    width: 100%;
+    text-align: center;
+    line-height: 4rem;
+}
+.happy-text p{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+.happy-text h2{
+    font-size: 4rem;
+    font-weight: 100;
+}
+.happy-logos{
+    display: flex;
+    margin-top: 5rem;
+}
+.happy-logos img {
+    width: 170px;
+    height: auto;
+}
+.happy-logos-ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    text-align: center;
+    /* right: 0; */
+    position: relative;
+    margin: 0 auto;
+}
+.happy-logos-ul li{
+    width: 25%;
+    margin: 0 0 6rem 0;
+}
+@media (max-width: 1200px) {
+    .boxes-h {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .happy-logos-ul li {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes-h {
+        flex-direction: column;
+    }
+
+    .happy-logos-ul li {
+        width: 90%;
+    }
+}

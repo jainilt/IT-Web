@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP Typewriter Effect</title>
+  <style>
+    /* CSS for the text */
+    .typewriter-text {
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="typewriter-text">Hello, World!</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script>
+    // Select the element containing the text
+    const textElement = document.querySelector('.typewriter-text');
+    // Define the text content
+    const textContent = "Hello, World!";
+    // Set initial text content to empty string
+    textElement.textContent = '';
+
+    // Function to create typewriter effect
+    function typewriter() {
+      // Split text content into individual characters
+      const characters = textContent.split('');
+      // Initialize index to 0
+      let i = 0;
+
+      // Use GSAP's timeline to animate the typing effect
+      gsap.timeline({ repeat: -1 })
+        // Iterate over each character
+        .to({}, { duration: 0.1, repeat: characters.length - 1, onRepeat: () => {
+          // Append the next character to the text content
+          textElement.textContent += characters[i];
+          // Increment index
+          i++;
+        }})
+        // Remove the last character (to create a blinking cursor effect)
+        .to(textElement, { duration: 0.5, opacity: 0, delay: 0.5 })
+        .to(textElement, { duration: 0.5, opacity: 1 });
+    }
+
+    // Call the typewriter function
+    typewriter();
+  </script>
+</body>
+</html>
