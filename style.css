@@ -279,8 +279,8 @@ p.service-heading-p {
 
 .box1{
     /* height: auto; */
-    width: 380px;
-    height: 380px;
+    width: 390px;
+    height: 390px;
     background-color: rgb(39, 39, 39);
     position: relative;
     /* left: 20rem; */
@@ -301,8 +301,8 @@ p.service-heading-p {
     height: 390px; */
 }
 .box1 img{
-    width: 380px;
-    height: 380px;
+    width: 390px;
+    height: 390px;
 }
 .box1 img:hover{
     opacity: 0.4;
@@ -528,6 +528,10 @@ p.service-heading-p {
         font-size: 2rem;
         line-height: 3rem;
     }
+    .box1 img{
+        width: 300px;
+        height: 300px;
+    }
 
     .services {
         margin: 0 1rem;
@@ -601,9 +605,6 @@ p.service-heading-p {
       width: 1px;
       /* text-align: center; */
       margin: 32px 79px;
-    }
-    .leaf,.leaf-section{
-      /* display: none; */
     }
   }
   .nav {
