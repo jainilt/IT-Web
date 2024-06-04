@@ -279,8 +279,8 @@ p.service-heading-p {
 
 .box1{
     /* height: auto; */
-    width: 390px;
-    height: 390px;
+    width: 380px;
+    height: 380px;
     background-color: rgb(39, 39, 39);
     position: relative;
     /* left: 20rem; */
@@ -301,8 +301,8 @@ p.service-heading-p {
     height: 390px; */
 }
 .box1 img{
-    width: 390px;
-    height: 390px;
+    width: 380px;
+    height: 380px;
 }
 .box1 img:hover{
     opacity: 0.4;
