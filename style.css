@@ -70,7 +70,9 @@ ul {
     transition: opacity 0.3s, width 0.3s, left 0.3s;
     opacity: 0;
 }
-
+.gradient-text {
+    padding: 0 0 0 15px;
+}
 .items-item:hover::before {
     opacity: 1;
     width: 100%;
@@ -127,7 +129,7 @@ ul {
     color: white;
     max-width: 70rem;
     margin: 0 auto;
-    padding: 10px;
+    /* padding: 10px; */
     line-height: 5rem;
 }
 
@@ -149,8 +151,8 @@ ul {
 
 .services-flex {
     display: flex;
-    line-height: 2.5rem;
-    margin-top: 8rem;
+    line-height: 1.5rem;
+    margin-top: 3rem;
 }
 
 .pr {
@@ -279,18 +281,19 @@ p.service-heading-p {
 
 .box1{
     /* height: auto; */
-    width: 390px;
-    height: 390px;
+    width: 300px;
+    height: 300px;
     background-color: rgb(39, 39, 39);
     position: relative;
     /* left: 20rem; */
-    top: 12rem;
+    top: 5rem;
     cursor: pointer;
     margin-bottom: 4rem;
 }
 .horizontal{
     background-color: #000000;
-    margin-bottom: 5rem;
+    /* margin-bottom: 5rem; */
+    padding: 69px 0 126px 0;
 }
 .boxes-h{
     /* display: flex; */
@@ -301,8 +304,8 @@ p.service-heading-p {
     height: 390px; */
 }
 .box1 img{
-    width: 390px;
-    height: 390px;
+    width: 300px;
+    height: 300px;
 }
 .box1 img:hover{
     opacity: 0.4;
@@ -318,13 +321,14 @@ p.service-heading-p {
 }
 .boxes-h3{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
     position: absolute;
     width: 100%;
     text-align: center;
-    /* top: 30%; */
+    /* top: 240%; */
     padding: 135px 0;
+    margin-top: -30px;
 }
 .box1 .jt{
     opacity: 0;
@@ -339,7 +343,7 @@ p.service-heading-p {
 }
 .box1:hover .jt{
     opacity: 1;
-    top: 64%;
+    top: 42%;
 }
 .happy-text{
     width: 100%;
@@ -351,7 +355,7 @@ p.service-heading-p {
     letter-spacing: 0.2rem;
 }
 .happy-text h2{
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 100;
 }
 .happy-logos{
@@ -516,9 +520,6 @@ p.service-heading-p {
         font-size: 10px;
         margin: 0;
     }
-    .happy-clients{
-        margin-top: 12rem;
-    }
     .nav-title img {
         width: 120px;
     }
@@ -527,10 +528,16 @@ p.service-heading-p {
     .content>h2 {
         font-size: 2rem;
         line-height: 3rem;
+        padding: 0 0 0 15px;
     }
     .box1 img{
-        width: 390px;
-        height: 390px;
+        width: 300px;
+        height: 300px;
+        /* margin: 0 auto; */
+    }
+    .box1{
+        left: 31px;
+        /* margin: 0; */
     }
 
     .services {
@@ -539,11 +546,13 @@ p.service-heading-p {
 
     h3.service-heading {
         font-size: 1.2rem;
+        padding: 0 0 0 15px;
     }
 
     p.service-heading-p {
         font-size: 0.7rem;
         line-height: 1rem;
+        padding: 0 0 0 15px;
     }
 }
 @media (max-width: 480px) {
@@ -637,6 +646,9 @@ p.service-heading-p {
       display: none;
   }
   @media (max-width: 480px) {
+    .services-flex{
+        display: block;
+    }
     .nav {
       padding: 1rem;
     }
