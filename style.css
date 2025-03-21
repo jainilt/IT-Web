@@ -71,7 +71,7 @@ ul {
     opacity: 0;
 }
 .gradient-text {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 0px;
 }
 .items-item:hover::before {
     opacity: 1;
@@ -193,7 +193,7 @@ p.service-heading-p {
 
 .gradient-text p {
     font-weight: 800;
-    background: linear-gradient(to right, #22e457 0, #1bd6d8 13%);
+    background: linear-gradient(to right, #22e457 0, #1bd6d8 2%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
