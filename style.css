@@ -463,7 +463,7 @@ p.service-heading-p {
     }
     .prde{
         display: flex;
-        padding: 94px 0;
+        padding: 94px 20px;
     }
     .left span {
         font-weight: 400;
